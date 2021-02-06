@@ -3,12 +3,21 @@ package model;
 import model.Figure;
 
 public class Player {
-    String getName (String playerName){
-        String someName = playerName;
-        return someName;
+
+    private final String name;
+
+    private final String figure;
+
+    public Player(final String name, final String figure) {
+        this.name = name;
+        this.figure = figure;
     }
-    Figure getFigure(){
-        Figure someFigure = new Figure();
-        return someFigure;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getFigure() {
+        return figure;
     }
 }
