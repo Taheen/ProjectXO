@@ -26,9 +26,9 @@ class PlayerTest {
         final Figure inputValue = Figure.X;
         final Figure expectedValue = inputValue;
 
-        final Player player = new Player(null, inputValue);
+        final Player player = new Player(null, "something");
 
-        final Figure actualValue = player.getFigure();
+        final String actualValue = player.getFigure();
 
         assertEquals(expectedValue, actualValue);
     }
